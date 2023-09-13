@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inconsolata:wght@400;600;700&family=Inter:wght@400;500;600;700&family=Jost:wght@400;500;600;700&family=M+PLUS+1:wght@400;500;600;700;800&family=Michroma&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #282D35;
+  overflow: hidden;
+  color: white;
+  height: 100vh;
+}
