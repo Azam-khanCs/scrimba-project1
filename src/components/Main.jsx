@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Main = () => {
+const Main = (props) => {
   return (
-    <div className='main'>
+    <div className={`main ${props.darkMode ? 'darkmain' : ''}`}>
       <div className="main-wrapper container">
         <div>
           <h1>Fun facts about React</h1>

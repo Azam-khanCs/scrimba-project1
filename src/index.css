@@ -6,8 +6,6 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: #282D35;
   overflow: hidden;
-  color: white;
   height: 100vh;
 }

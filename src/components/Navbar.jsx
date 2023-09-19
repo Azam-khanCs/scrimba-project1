@@ -1,9 +1,12 @@
 import React from 'react'
 import Logo from '../assets/react.svg'
 
-const Navbar = () => {
+const Navbar = (props) => {
+
+
+
   return (
-    <div className="navbar">
+    <div className={`navbar ${props.darkMode ? 'dark' : ''}`}>
       <div className="nav container">
         <div className="nav-brand ">
           <div>
@@ -12,6 +15,18 @@ const Navbar = () => {
           <div className="brand-name">
             <h3>ReactFacts</h3>
           </div>
+        </div>
+        <div
+          className="toggler"
+        >
+          <p className={`toggler--light ${props.darkMode ? 'd-none' : ''}`}>Light</p>
+          <div
+            className="toggler--slider"
+            onClick={props.toggleMode}
+          >
+            <div className="toggler--slider--circle"></div>
+          </div>
+          <p className={`toggler--dark ${props.darkMode ? '' : 'd-none'}`}>Dark</p>
         </div>
         <div className="nav-link">
           <h4>React Course - Project
